@@ -3,3 +3,4 @@ Enhancing inference time with fourier space hyperparameter search and convolutio
 
 ## Convolution theorem
 $\mathcal{F}(f * g) = \mathcal{F}(f) \odot \mathcal{F}(g)$
+
