@@ -28,11 +28,8 @@ torch::Tensor conv2d_fwd (torch::Tensor[] input, torch::Tensor[] weight, torch::
     cudnnCreate(&cudnn);
 
     // from torch::Tensor to cudnn tensor
-    cudnnTensorDescriptor_t in;
-    cudnnTensorDescriptor_t w;
-    cudnnTensorDescriptor_t b;
-    cudnnTensorDescriptor_t out;
-
+    cudnnTensorDescriptor_t in, w, b, out;
+    
     cudnnGetTensor4dDescriptor(&in);
     cudnnGetTensor4dDescriptor(&w);
     cudnnGetTensor4dDescriptor(&b);
